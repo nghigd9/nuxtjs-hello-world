@@ -1,0 +1,35 @@
+$primary-color : #2ddf59;
+// Base UI Colors
+$bg-primary: #1e1e2e;       // Deep blue-black
+$bg-secondary: #282a36;     // Slightly lighter background
+$bg-tertiary: #313244;      // Panels, sidebars
+$border-color: #44475a;     // Subtle borders
+
+// Text Colors
+$text-primary: #0e0e0c;     // Main text
+$text-secondary: #a6adc8;   // Comments, secondary text
+$text-muted: #6c7086;       // Disabled text
+
+$text-gray: #b5b5b5;         
+$text-white: #ffffff;      
+$text-black: #000000;    
+$text-white-light: #f8f8f2; 
+  
+
+// Syntax Highlighting
+$syntax-keyword: #ff79c6;   // Keywords, operators
+$syntax-function: #50fa7b;  // Functions, methods
+$syntax-string: #f1fa8c;    // Strings
+$syntax-number: #bd93f9;    // Numbers, constants
+$syntax-class: #8be9fd;     // Classes, types
+$syntax-comment: #6272a4;   // Comments
+
+// Status Colors
+$success: #50fa7b;          // Success states
+$warning: #f1fa8c;          // Warning states
+$error: #ff5555;            // Error states
+$info: #8be9fd;             // Info states
+
+// Accent Colors
+$accent-primary: #bd93f9;   // Primary actions, highlights
+$accent-secondary: #ff79c6; // Secondary actions
