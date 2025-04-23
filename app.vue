@@ -1,17 +1,17 @@
 <template>
   <div>
-    <Header />
-    <div class="body">
+    <NuxtLayout>
       <NuxtPage />
-    </div>
-    <Footer />
+    </NuxtLayout>
+
+    <!-- Global Modals/Components -->
     <SearchModal />
     <ReportErrorModal ref="reportErrorModal" />
   </div>
 </template>
 
 <script setup>
-// You can provide a composable to open the modal from anywhere
+// Keep your global providers/refs here
 const reportErrorModal = ref(null);
 
 const useErrorReport = () => {
@@ -19,12 +19,13 @@ const useErrorReport = () => {
     console.log('Opening report error modal');
     reportErrorModal.value?.openModal();
   };
-  
+
   return {
     openReportModal
   };
 };
-
-// Make the function available globally
 provide('errorReport', useErrorReport());
+
+// Import global CSS if not done elsewhere (e.g., in nuxt.config)
+// import '~/assets/scss/global.scss';
 </script>
