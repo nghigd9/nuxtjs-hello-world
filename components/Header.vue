@@ -5,7 +5,7 @@
         <div class="logo">
           <NuxtLink to="/">
             <Icon name="logos:nuxt-icon" class="logo-icon" />
-            <span>YourLogo</span>
+            <span>NuxtJS</span>
           </NuxtLink>
         </div>
         
@@ -45,6 +45,12 @@
               <NuxtLink to="/contact">
                 <Icon name="uil:envelope" class="nav-icon" />
                 <span>Contact</span>
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/login">
+                <Icon name="uil:user" class="nav-icon" />
+                <span>Login</span>
               </NuxtLink>
             </li>
           </ul>

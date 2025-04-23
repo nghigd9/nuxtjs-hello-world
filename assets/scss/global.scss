@@ -1,14 +1,14 @@
 // assets/scss/global.scss
-@use 'variables' as *;
+@use "variables" as *;
 
 body {
-  background-color: #f4f4f4;
+  background-color: $bg-primary;
   margin: 0;
   padding: 0;
 }
+
 .body {
   min-height: 50vh;
-  background-color: #f4f4f4;
 }
 
 .container {
@@ -16,3 +16,5 @@ body {
   margin: 0 auto;
   padding: 0 1rem;
 }
+
+

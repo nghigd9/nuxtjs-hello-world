@@ -68,7 +68,6 @@ const { reportError } = useErrorReport();
   background-color: $bg-secondary;
   color: $text-secondary;
   padding: 3rem 0 1.5rem;
-  margin-top: 4rem;
 }
 
 .footer-content {

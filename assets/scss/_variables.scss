@@ -1,35 +1,62 @@
 $primary-color : #2ddf59;
+
 // Base UI Colors
-$bg-primary: #1e1e2e;       // Deep blue-black
-$bg-secondary: #282a36;     // Slightly lighter background
-$bg-tertiary: #313244;      // Panels, sidebars
-$border-color: #44475a;     // Subtle borders
+$bg-primary:      #121212;   // Main dark background
+$bg-secondary:    #1e1e1e;   // Slightly lighter for cards/modals
+$bg-tertiary:     #2a2a2a;   // Even lighter for hovering, etc.
+$border-color:    #333333;   // Soft border for contrast
 
 // Text Colors
-$text-primary: #0e0e0c;     // Main text
-$text-secondary: #a6adc8;   // Comments, secondary text
-$text-muted: #6c7086;       // Disabled text
+$text-primary:     #ffffff;  // Main readable text
+$text-secondary:   #cccccc;  // Slightly muted
+$text-muted:       #888888;  // Less emphasis
 
-$text-gray: #b5b5b5;         
-$text-white: #ffffff;      
-$text-black: #000000;    
-$text-white-light: #f8f8f2; 
-  
+$text-gray:        #aaaaaa;  // Neutral gray for placeholders
+$text-white:       #ffffff;
+$text-black:       #000000;
+$text-white-light: rgba(255, 255, 255, 0.7); // Light white for subtle elements
 
 // Syntax Highlighting
-$syntax-keyword: #ff79c6;   // Keywords, operators
-$syntax-function: #50fa7b;  // Functions, methods
-$syntax-string: #f1fa8c;    // Strings
-$syntax-number: #bd93f9;    // Numbers, constants
-$syntax-class: #8be9fd;     // Classes, types
-$syntax-comment: #6272a4;   // Comments
+$syntax-keyword:   #ff79c6;  // Pinkish purple (e.g. for keywords like `function`)
+$syntax-function:  #50fa7b;  // Your main green for functions
+$syntax-string:    #f1fa8c;  // Yellowish for strings
+$syntax-number:    #bd93f9;  // Lavender for numbers
+$syntax-class:     #8be9fd;  // Cyan for class names
 
 // Status Colors
-$success: #50fa7b;          // Success states
-$warning: #f1fa8c;          // Warning states
-$error: #ff5555;            // Error states
-$info: #8be9fd;             // Info states
+$success:          #50fa7b;
+$warning:          #ffb86c;
+$error:            #ff5555;
+$info:             #8be9fd;
 
 // Accent Colors
-$accent-primary: #bd93f9;   // Primary actions, highlights
-$accent-secondary: #ff79c6; // Secondary actions
+$accent-primary:   #2ddf59;  // Your primary highlight green
+$accent-secondary: #00c896;  // A cool greenish-teal as a backup accent
+
+$gray-900: #0d0d0d;   // Almost black - for modals/overlays
+$gray-800: #1a1a1a;   // Very dark background
+$gray-700: #2a2a2a;   // Used in cards, secondary areas
+$gray-600: #3a3a3a;   // Borders, inactive buttons
+$gray-500: #555555;   // Muted text or icons
+$gray-400: #777777;
+$gray-300: #999999;
+$gray-200: #bbbbbb;
+$gray-100: #dddddd;
+
+$green-bright:   #50fa7b;  // Your main neon green
+$green-soft:     #2ddf59;  // Softer, used for primary buttons
+$green-dark:     #1a923f;  // Hover/darker shade
+
+$blue-bright:    #8be9fd;
+$blue-deep:      #008cff;
+
+$pink-accent:    #ff79c6;
+$purple-accent:  #bd93f9;
+$yellow-accent:  #f1fa8c;
+$orange-accent:  #ffb86c;
+$red-accent:     #ff5555;
+
+$overlay-dark: rgba(0, 0, 0, 0.6);
+$overlay-light: rgba(255, 255, 255, 0.05);
+$shadow-soft: rgba(0, 0, 0, 0.2);
+$shadow-strong: rgba(0, 0, 0, 0.4);
