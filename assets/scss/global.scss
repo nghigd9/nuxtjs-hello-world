@@ -1,6 +1,10 @@
 // assets/scss/global.scss
 @use "variables" as *;
 
+*{
+  box-sizing: border-box;
+}
+
 body {
   background-color: $bg-primary;
   margin: 0;

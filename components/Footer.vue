@@ -12,16 +12,12 @@
             <h4>Navigation</h4>
             <ul>
               <li><NuxtLink to="/">Home</NuxtLink></li>
-              <li><NuxtLink to="/about">About</NuxtLink></li>
-              <li><NuxtLink to="/services">Services</NuxtLink></li>
-              <li><NuxtLink to="/contact">Contact</NuxtLink></li>
             </ul>
           </div>
 
           <div class="footer-column">
             <h4>Resources</h4>
             <ul>
-              <li><NuxtLink to="/blog">Blog</NuxtLink></li>
               <li><NuxtLink to="">FAQ</NuxtLink></li>
               <li><NuxtLink to="">Documentation</NuxtLink></li>
             </ul>
@@ -45,19 +41,12 @@
           <a href="#" aria-label="GitHub"><span>GitHub</span></a>
           <a href="#" aria-label="LinkedIn"><span>LinkedIn</span></a>
         </div>
-        <div class="footer-links">
-          <button @click="reportError" class="report-button">
-            <Icon name="uil:bug" class="report-icon" />
-            Report an issue
-          </button>
-        </div>
       </div>
     </div>
   </footer>
 </template>
 
 <script setup>
-const { reportError } = useErrorReport();
 </script>
 
 <style scoped lang="scss">

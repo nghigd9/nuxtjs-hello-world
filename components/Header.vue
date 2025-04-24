@@ -3,17 +3,13 @@
     <div class="container">
       <div class="header-content">
         <div class="logo">
-          <NuxtLink to="/">
-            <Icon name="logos:nuxt-icon" class="logo-icon" />
+          <NuxtLink to="/" class="logo-link">
+            <Image src="/logo.png" alt="Logo" width="40" height="40" class="logo" />
             <span>NuxtJS</span>
           </NuxtLink>
         </div>
         
         <div class="header-actions">
-          <button class="search-button" @click="toggleSearch" aria-label="Search">
-            <Icon name="uil:search" class="icon-search" />
-          </button>
-          
           <button class="mobile-toggle" @click="toggleMenu" aria-label="Toggle menu">
             <span></span>
             <span></span>
@@ -36,21 +32,9 @@
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/services">
-                <Icon name="uil:setting" class="nav-icon" />
-                <span>Services</span>
-              </NuxtLink>
-            </li>
-            <li>
               <NuxtLink to="/contact">
                 <Icon name="uil:envelope" class="nav-icon" />
                 <span>Contact</span>
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/login">
-                <Icon name="uil:user" class="nav-icon" />
-                <span>Login</span>
               </NuxtLink>
             </li>
           </ul>
@@ -62,7 +46,6 @@
 
 <script setup>
 const isMenuOpen = ref(false);
-const { toggleSearch } = useSearch();
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
@@ -105,6 +88,12 @@ onUnmounted(() => {
   padding: 1rem 0;
 }
 
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $text-primary;
+}
 .logo {
   font-size: 1.5rem;
   font-weight: bold;

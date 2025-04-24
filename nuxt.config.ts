@@ -13,5 +13,17 @@ export default defineNuxtConfig({
   ],
   css: [
     '@/assets/scss/global.scss'
-  ]
+  ],
+  devServer: {
+    port: 4000, // default: 3000
+    // host: '0.0.0.0' // default: localhost
+  },
+
+  // Add app configuration for head elements
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+    }
+  }
 })
